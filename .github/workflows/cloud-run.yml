@@ -49,7 +49,7 @@ jobs:
         
     - name: Deploy to GKE Cluster
       run: |-
-        gcloud container clusters get-credentials ${{ secrets.CLUSTER_NAME }} --zone CLUSTER_ZONE
+        gcloud container clusters get-credentials ${{ secrets.CLUSTER_NAME }} --zone $CLUSTER_ZONE
         # install/upgrade helm chart
         helm upgrade --install nodeapp ./helm/nodeapp --set image.repository=gcr.io/$PROJECT_ID/$REPO_NAME --set image.tag=$GITHUB_SHA        
  
