@@ -5,13 +5,13 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Node App</title>
+        <title>Create My Node App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">My Node.js Page</a>
+          Welcome to <a href="https://nextjs.org">My Node.js App</a>
         </h1>
 
 
